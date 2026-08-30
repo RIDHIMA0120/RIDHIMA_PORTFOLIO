@@ -14,6 +14,9 @@ dist/
 dist-ssr/
 *.local
 
+# Large video files
+dsaraghavvideos/
+
 # Editor directories
 .vscode/
 .idea/

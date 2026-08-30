@@ -426,6 +426,188 @@ void bubbleSort(int arr[], int n) {
       </div>
     </section>
 
+    <!-- INTERACTIVE DSA VIDEO SCHEDULE & TRACKER SECTION -->
+    <section id="dsa-video-tracker" class="section video-tracker-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-subtitle">Study Schedule & Roadmap</span>
+          <h2 class="section-title">Decode DSA Video Lecture Tracker (45 Lessons)</h2>
+          <div class="section-line"></div>
+          <p class="section-desc">
+            Track your daily progress through the 45 uploaded DSA video lectures in `dsaraghavvideos`. Check off completed lessons to build consistency!
+          </p>
+        <!-- DAILY 3-HOUR TIMETABLE & DIRECT COURSE LINKS -->
+        <div class="course-directory-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+          <!-- DSA 2-Hour Block Card -->
+          <div class="glass-card" style="padding: 1.5rem;">
+            <h3 style="color: var(--accent-cyan); font-size: 1.15rem; margin-bottom: 0.6rem;">
+              <i class="fa-solid fa-clock"></i> Daily DSA Block (2 Hours/Day)
+            </h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+              1 Hour Video Lecture + 1 Hour C++ Coding & LeetCode Practice.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+              <a href="https://leetcode.com/problemset/all/" target="_blank" class="link-github"><i class="fa-solid fa-arrow-up-right-from-square"></i> LeetCode C++ Practice Suite &rarr;</a>
+              <a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target="_blank" class="link-github"><i class="fa-solid fa-arrow-up-right-from-square"></i> Striver's A2Z DSA Sheet &rarr;</a>
+              <a href="https://www.geeksforgeeks.org/c-plus-plus/" target="_blank" class="link-github"><i class="fa-solid fa-arrow-up-right-from-square"></i> GeeksforGeeks C++ Docs &rarr;</a>
+              <a href="https://www.learncpp.com/" target="_blank" class="link-github"><i class="fa-solid fa-arrow-up-right-from-square"></i> LearnCpp.com Tutorials &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Cybersecurity 1-Hour Block Card -->
+          <div class="glass-card" style="padding: 1.5rem;">
+            <h3 style="color: var(--accent-green); font-size: 1.15rem; margin-bottom: 0.6rem;">
+              <i class="fa-solid fa-shield-cat"></i> Daily Cyber Block (1 Hour/Day)
+            </h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+              Hands-on Labs on TryHackMe, PortSwigger, & Security+ Theory.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+              <a href="https://tryhackme.com/" target="_blank" class="link-github"><i class="fa-solid fa-arrow-up-right-from-square"></i> TryHackMe Platform &rarr;</a>
+              <a href="https://portswigger.net/web-security" target="_blank" class="link-github"><i class="fa-solid fa-arrow-up-right-from-square"></i> PortSwigger Web Security Academy &rarr;</a>
+              <a href="https://overthewire.org/wargames/bandit/" target="_blank" class="link-github"><i class="fa-solid fa-arrow-up-right-from-square"></i> OverTheWire Linux Bandit &rarr;</a>
+              <a href="https://www.professormesser.com/security-plus/sy0-701/sy0-701-video-training-course/" target="_blank" class="link-github"><i class="fa-solid fa-arrow-up-right-from-square"></i> Prof. Messer Security+ Course &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tracker-dashboard glass-card" style="padding: 2rem;">
+          <div class="tracker-progress-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <div>
+              <h3>Overall Study Progress</h3>
+              <p><span id="completed-count">0</span> of 45 Video Lectures Completed</p>
+            </div>
+            <div class="progress-percentage-badge" style="font-size: 1.8rem; font-weight: 800; color: var(--accent-cyan);">
+              <span id="progress-percent">0%</span>
+            </div>
+          </div>
+          
+          <div class="overall-progress-bar" style="width: 100%; height: 12px; background: rgba(255,255,255,0.1); border-radius: 9999px; overflow: hidden; margin-bottom: 2rem;">
+            <div id="tracker-progress-fill" class="progress-fill" style="width: 0%; height: 100%; background: var(--gradient-primary); transition: width 0.3s ease;"></div>
+          </div>
+
+          <div class="modules-accordion" id="modules-accordion" style="display: flex; flex-direction: column; gap: 1rem;">
+            <!-- Module 1 -->
+            <div class="module-card glass-card" style="padding: 1.2rem;">
+              <div class="module-header" style="cursor: pointer;">
+                <h4 style="color: var(--accent-cyan); font-size: 1.05rem;"><i class="fa-solid fa-folder-open"></i> Module 1: C++ Fundamentals & Basics (Days 1–8)</h4>
+              </div>
+              <ul class="video-list" style="list-style: none; margin-top: 0.8rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.6rem;">
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v1"> Day 1: Intro to C++ & Input Operators (003)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v2"> Day 2: Conditionals Part 1 (004)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v3"> Day 3: Conditionals Part 2 (005)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v4"> Day 4: Loops Part 1 (for/while) (006)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v5"> Day 5: Loops Part 2 (Problems) (007)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v6"> Day 6: Pattern Printing Part 1 (008)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v7"> Day 7: Pattern Printing Part 2 (009)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v8"> Day 8: Fundamentals Live Session (010)</label></li>
+              </ul>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="module-card glass-card" style="padding: 1.2rem;">
+              <div class="module-header" style="cursor: pointer;">
+                <h4 style="color: var(--accent-blue); font-size: 1.05rem;"><i class="fa-solid fa-folder-open"></i> Module 2: Functions, Pointers & 1D Arrays (Days 9–15)</h4>
+              </div>
+              <ul class="video-list" style="list-style: none; margin-top: 0.8rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.6rem;">
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v9"> Day 9: Functions & Pass by Ref (011)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v10"> Day 10: Pointers & Addresses (012)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v11"> Day 11: 1D Arrays Part 1 (013)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v12"> Day 12: 1D Arrays Part 2 (Vectors) (014)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v13"> Day 13: 1D Arrays Part 3 (Two Pointers) (015)</label></li>
+              </ul>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="module-card glass-card" style="padding: 1.2rem;">
+              <div class="module-header" style="cursor: pointer;">
+                <h4 style="color: var(--accent-purple); font-size: 1.05rem;"><i class="fa-solid fa-folder-open"></i> Module 3: 2D Arrays & Strings (Days 16–21)</h4>
+              </div>
+              <ul class="video-list" style="list-style: none; margin-top: 0.8rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.6rem;">
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v14"> Day 16: 2D Arrays Part 1 (016)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v15"> Day 17: 2D Arrays Part 2 (Matrix Ops) (017)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v16"> Day 18: 2D Arrays Part 3 (Spiral Order) (018)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v17"> Day 19: Strings Part 1 (std::string) (019)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v18"> Day 20: Strings Part 2 (Anagrams) (020)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v19"> Day 21: 2D Arrays Live Class (021)</label></li>
+              </ul>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="module-card glass-card" style="padding: 1.2rem;">
+              <div class="module-header" style="cursor: pointer;">
+                <h4 style="color: var(--accent-yellow); font-size: 1.05rem;"><i class="fa-solid fa-folder-open"></i> Module 4: Complexity Analysis & Basic Sorting (Days 22–27)</h4>
+              </div>
+              <ul class="video-list" style="list-style: none; margin-top: 0.8rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.6rem;">
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v20"> Day 22: Time Complexity (Big-O) (022)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v21"> Day 23: Space Complexity Analysis (023)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v22"> Day 24: Bubble Sorting (024)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v23"> Day 25: Selection & Insertion Sort (025)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v24"> Day 26: Complexity Live Session (026)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v25"> Day 27: Problems on Sorting (027)</label></li>
+              </ul>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="module-card glass-card" style="padding: 1.2rem;">
+              <div class="module-header" style="cursor: pointer;">
+                <h4 style="color: var(--accent-green); font-size: 1.05rem;"><i class="fa-solid fa-folder-open"></i> Module 5: Binary Search & Searching (Days 28–30)</h4>
+              </div>
+              <ul class="video-list" style="list-style: none; margin-top: 0.8rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.6rem;">
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v26"> Day 28: Searching Part 1 (Binary Search) (028)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v27"> Day 29: Searching Part 2 (Bounds) (029)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v28"> Day 30: Searching Part 3 (Answer Space) (030)</label></li>
+              </ul>
+            </div>
+
+            <!-- Module 6 -->
+            <div class="module-card glass-card" style="padding: 1.2rem;">
+              <div class="module-header" style="cursor: pointer;">
+                <h4 style="color: var(--accent-pink); font-size: 1.05rem;"><i class="fa-solid fa-folder-open"></i> Module 6: Recursion & Advanced Sorting (Days 31–39)</h4>
+              </div>
+              <ul class="video-list" style="list-style: none; margin-top: 0.8rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.6rem;">
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v29"> Day 31: Recursion Part 1 (031)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v30"> Day 32: Recursion Part 2 (032)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v31"> Day 33: Recursion Part 3 (033)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v32"> Day 34: Sorting Live Session (034)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v33"> Day 35: Recursion Part 4 (035)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v34"> Day 36: Merge Sort (036)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v35"> Day 37: Quick Sort (037)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v36"> Day 38: Recursion Live Session (038)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v37"> Day 39: Cyclic Sort (039)</label></li>
+              </ul>
+            </div>
+
+            <!-- Module 7 -->
+            <div class="module-card glass-card" style="padding: 1.2rem;">
+              <div class="module-header" style="cursor: pointer;">
+                <h4 style="color: var(--accent-orange); font-size: 1.05rem;"><i class="fa-solid fa-folder-open"></i> Module 7: Special Algorithms (Days 40–42)</h4>
+              </div>
+              <ul class="video-list" style="list-style: none; margin-top: 0.8rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.6rem;">
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v38"> Day 40: Prefix Sum (040)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v39"> Day 41: Sliding Window (041)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v40"> Day 42: Prime Numbers & Sieve (042)</label></li>
+              </ul>
+            </div>
+
+            <!-- Module 8 -->
+            <div class="module-card glass-card" style="padding: 1.2rem;">
+              <div class="module-header" style="cursor: pointer;">
+                <h4 style="color: var(--accent-red); font-size: 1.05rem;"><i class="fa-solid fa-folder-open"></i> Module 8: Greedy & Dynamic Programming (Days 43–45+)</h4>
+              </div>
+              <ul class="video-list" style="list-style: none; margin-top: 0.8rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.6rem;">
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v41"> Day 43: Greedy Part 2 (072)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v42"> Day 44: Greedy Part 3 (073)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v43"> Day 45: Dynamic Programming 1 Part 1 (074)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v44"> Day 46: Dynamic Programming 1 Part 2 (075)</label></li>
+                <li><label style="cursor: pointer;"><input type="checkbox" class="vid-check" data-id="v45"> Day 47: Dynamic Programming 1 Part 3 (076)</label></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FEATURED PROJECTS SECTION -->
     <section id="projects" class="section projects-section">
       <div class="container">

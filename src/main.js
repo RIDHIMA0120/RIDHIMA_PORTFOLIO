@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTypingEffect();
   initSkillsFilter();
   initDsaVisualizer();
+  initVideoTracker();
   initResumeModal();
   initContactForm();
   initMobileMenu();
@@ -530,6 +531,49 @@ function initContactForm() {
     showToast(`Thank you, ${name}! Your message has been sent successfully.`);
     form.reset();
   });
+}
+
+/* ------------------------------------------
+   7.5. DSA VIDEO SCHEDULE & TRACKER
+   ------------------------------------------ */
+function initVideoTracker() {
+  const checkboxes = document.querySelectorAll('.vid-check');
+  const countEl = document.getElementById('completed-count');
+  const percentEl = document.getElementById('progress-percent');
+  const fillEl = document.getElementById('tracker-progress-fill');
+
+  if (!checkboxes.length) return;
+
+  const total = checkboxes.length;
+  const savedState = JSON.parse(localStorage.getItem('dsa_video_progress') || '{}');
+
+  checkboxes.forEach(cb => {
+    const id = cb.getAttribute('data-id');
+    if (savedState[id]) {
+      cb.checked = true;
+    }
+
+    cb.addEventListener('change', () => {
+      savedState[id] = cb.checked;
+      localStorage.setItem('dsa_video_progress', JSON.stringify(savedState));
+      updateProgress();
+
+      if (cb.checked) {
+        showToast('Lesson marked as completed! 🎯 Great progress!');
+      }
+    });
+  });
+
+  function updateProgress() {
+    const completed = Object.values(savedState).filter(Boolean).length;
+    const percentage = Math.round((completed / total) * 100);
+
+    if (countEl) countEl.textContent = completed;
+    if (percentEl) percentEl.textContent = `${percentage}%`;
+    if (fillEl) fillEl.style.width = `${percentage}%`;
+  }
+
+  updateProgress();
 }
 
 /* ------------------------------------------
