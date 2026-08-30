@@ -137,10 +137,10 @@ function initTypingEffect() {
   if (!target) return;
 
   const phrases = [
-    'Frontend Web Developer',
-    'HTML · CSS · C++',
-    'Amazon Clone & To-Do App Creator',
-    'Seeking Web Dev Internship 2026'
+    'Cybersecurity Analyst',
+    'Threat & Vulnerability Analyst',
+    'Deloitte & Tata Cyber Simulation Graduate',
+    'InfoSec & Security Engineer'
   ];
 
   let phraseIndex = 0;

@@ -29,7 +29,7 @@ doc
   .fillColor(accentColor)
   .fontSize(10)
   .font('Helvetica-Bold')
-  .text('Frontend Developer | HTML · CSS · C++ | Ghaziabad, Uttar Pradesh, India');
+  .text('Cybersecurity Analyst | Threat Analysis · InfoSec · C++ (DSA) · Web Security | Ghaziabad, UP, India');
 
 doc.moveDown(0.2);
 
@@ -57,13 +57,13 @@ function addSectionHeader(title) {
 }
 
 // SUMMARY
-addSectionHeader('Summary');
+addSectionHeader('Career Summary');
 doc
   .fillColor(darkGray)
   .fontSize(9.5)
   .font('Helvetica')
   .text(
-    'Computer Science graduate from ABES Engineering College with hands-on experience building responsive, clean websites using HTML and CSS. Currently strengthening problem-solving skills through Data Structures & Algorithms in C++. Completed job simulations with Deloitte and Tata, gaining exposure to real-world professional workflows. Seeking a Frontend Development / Web Development internship for 2026.',
+    'Computer Science graduate from ABES Engineering College dedicated to pursuing a career in Cybersecurity and Information Security. Hands-on experience completing enterprise cybersecurity analyst job simulations with Deloitte and Tata (via Forage), gaining exposure to threat analysis, risk mitigation, security protocols, and system workflows. Backed by computational logic in C++ (DSA) and web development skills in HTML/CSS. Seeking Cybersecurity Analyst / InfoSec Internships for 2026.',
     { align: 'justify', lineGap: 3 }
   );
 
@@ -90,6 +90,47 @@ doc
 
 doc.moveDown(1);
 
+// CYBERSECURITY SIMULATIONS & EXPERIENCE
+addSectionHeader('Cybersecurity Experience & Simulations');
+
+doc
+  .fillColor(primaryColor)
+  .fontSize(10)
+  .font('Helvetica-Bold')
+  .text('Deloitte Cyber Job Simulation (Forage)', { continued: true })
+  .fillColor(lightGray)
+  .font('Helvetica')
+  .text('  ·  Cybersecurity Simulation');
+
+doc.moveDown(0.2);
+
+doc
+  .fillColor(darkGray)
+  .fontSize(9)
+  .font('Helvetica')
+  .text('• Analyzed enterprise cybersecurity protocols, incident workflows, and risk management standards for scalable applications.', { indent: 10, lineGap: 2 });
+
+doc.moveDown(0.5);
+
+doc
+  .fillColor(primaryColor)
+  .fontSize(10)
+  .font('Helvetica-Bold')
+  .text('Tata — Cybersecurity Analyst Job Simulation (Forage)', { continued: true })
+  .fillColor(lightGray)
+  .font('Helvetica')
+  .text('  ·  Technical Analyst Simulation');
+
+doc.moveDown(0.2);
+
+doc
+  .fillColor(darkGray)
+  .fontSize(9)
+  .font('Helvetica')
+  .text('• Evaluated network access controls, threat prevention practices, and security monitoring logs for enterprise infrastructure.', { indent: 10, lineGap: 2 });
+
+doc.moveDown(1);
+
 // PROJECTS
 addSectionHeader('Projects');
 
@@ -98,7 +139,7 @@ doc
   .fillColor(primaryColor)
   .fontSize(10)
   .font('Helvetica-Bold')
-  .text('Amazon Clone', { continued: true })
+  .text('Amazon Clone & Front-End Architecture', { continued: true })
   .fillColor(accentColor)
   .font('Helvetica')
   .text('  — GitHub: https://github.com/RIDHIMA0120/Web-Development-project--sem-II');
@@ -109,19 +150,19 @@ doc
   .fillColor(darkGray)
   .fontSize(9)
   .font('Helvetica')
-  .text('• Built a responsive front-end clone of the Amazon website using HTML and CSS, replicating layout, navigation, and product display components.', { indent: 10, lineGap: 2 });
+  .text('• Built a responsive front-end clone of the Amazon website using HTML and CSS, replicating secure navigation, layout, and UI components.', { indent: 10, lineGap: 2 });
 
-doc.moveDown(0.6);
+doc.moveDown(0.5);
 
 // Project 2
 doc
   .fillColor(primaryColor)
   .fontSize(10)
   .font('Helvetica-Bold')
-  .text('To-Do List App', { continued: true })
+  .text('Task & Incident Tracker Web App', { continued: true })
   .fillColor(accentColor)
   .font('Helvetica')
-  .text('  — GitHub / Live: https://github.com/RIDHIMA0120/RIDHIMA0120.github.io');
+  .text('  — GitHub: https://github.com/RIDHIMA0120/RIDHIMA0120.github.io');
 
 doc.moveDown(0.2);
 
@@ -129,20 +170,21 @@ doc
   .fillColor(darkGray)
   .fontSize(9)
   .font('Helvetica')
-  .text('• Developed and deployed an interactive to-do list web app to add, manage, and track daily tasks, hosted via GitHub Pages.', { indent: 10, lineGap: 2 });
+  .text('• Developed an interactive web app to log, track, and manage daily security tasks and workflows, deployed live on GitHub Pages.', { indent: 10, lineGap: 2 });
 
 doc.moveDown(1);
 
-// SKILLS
-addSectionHeader('Skills');
+// SKILLS & CERTIFICATIONS
+addSectionHeader('Cybersecurity Skills & Certifications');
+
 doc
   .fillColor(primaryColor)
   .fontSize(9.5)
   .font('Helvetica-Bold')
-  .text('Languages & Web: ', { continued: true })
+  .text('Security Competencies: ', { continued: true })
   .fillColor(darkGray)
   .font('Helvetica')
-  .text('HTML, CSS, C++');
+  .text('Threat Analysis, Fundamentals of Information Security, Access Control, Risk Mitigation, Vulnerability Assessment');
 
 doc.moveDown(0.3);
 
@@ -150,21 +192,18 @@ doc
   .fillColor(primaryColor)
   .fontSize(9.5)
   .font('Helvetica-Bold')
-  .text('Concepts: ', { continued: true })
+  .text('Technical Stack: ', { continued: true })
   .fillColor(darkGray)
   .font('Helvetica')
-  .text('Responsive Web Design, Front-End Development, Data Structures & Algorithms (in progress)');
+  .text('C++ (DSA & Logic), HTML, CSS, Responsive Design, Git & GitHub');
 
-doc.moveDown(1);
+doc.moveDown(0.5);
 
-// CERTIFICATIONS
-addSectionHeader('Certifications');
 const certs = [
-  'Introduction to HTML',
-  'Introduction to CSS',
-  'Fundamentals of Information Security',
   'Deloitte Cyber Job Simulation (Forage)',
-  'Tata — Cybersecurity Analyst Job Simulation (Forage)'
+  'Tata — Cybersecurity Analyst Job Simulation (Forage)',
+  'Fundamentals of Information Security',
+  'Introduction to HTML & Introduction to CSS'
 ];
 
 certs.forEach(cert => {
@@ -176,4 +215,4 @@ certs.forEach(cert => {
 });
 
 doc.end();
-console.log('PDF Resume successfully generated at:', outputPath);
+console.log('Cybersecurity PDF Resume generated at:', outputPath);
